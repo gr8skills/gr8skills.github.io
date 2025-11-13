@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Temitope Joseph Seidu — Full Stack Developer</title>
+
+  <!-- Tailwind CDN (for quick hosting) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Meta -->
+  <meta name="description" content="Temitope Joseph Seidu — Fullstack Developer. Portfolio & resume." />
+
+  <style>
+    /* Small custom styles */
+    .glass {
+      background: rgba(255,255,255,0.06);
+      backdrop-filter: blur(6px);
+    }
+    .card-shadow {
+      box-shadow: 0 10px 30px rgba(2,6,23,0.18);
+    }
+    /* animated reveal */
+    .reveal {
+      opacity: 0;
+      transform: translateY(18px) scale(.995);
+      transition: opacity 600ms cubic-bezier(.2,.9,.3,1), transform 600ms cubic-bezier(.2,.9,.3,1);
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+    /* project image placeholders */
+    .proj-image {
+      background: linear-gradient(135deg,#0ea5a4,#6366f1);
+      min-height: 160px;
+    }
+    /* modal */
+    .modal-backdrop {
+      background: rgba(2,6,23,0.6);
+    }
+  </style>
+</head>
+<body class="bg-[#081129] text-slate-100 antialiased leading-relaxed">
+
+  <!-- NAV -->
+  <nav class="max-w-5xl mx-auto p-6 flex items-center justify-between">
+    <a href="#hero" class="text-white text-xl font-semibold">Temitope Seidu</a>
+    <div class="flex items-center gap-3">
+      <a href="#projects" class="text-slate-300 hover:text-white">Projects</a>
+      <a href="#about" class="text-slate-300 hover:text-white">About</a>
+      <a href="#contact" class="text-slate-300 hover:text-white">Contact</a>
+      <a href="resume.pdf" class="ml-2 px-4 py-2 bg-gradient-to-r from-indigo-500 to-cyan-400 rounded-md text-black font-semibold" download>Download Résumé</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header id="hero" class="max-w-5xl mx-auto px-6 py-12 flex flex-col md:flex-row items-center gap-8">
+    <div class="w-full md:w-2/3 reveal" data-reveal>
+      <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">
+        Temitope Joseph Seidu
+      </h1>
+      <p class="mt-3 text-slate-300 max-w-2xl">
+        Full Stack Developer & Robotic Engineer with 7+ years building LAMP, NodeJS and modern frontend apps.
+        I design robust backend systems and interactive frontends, and have delivered solutions for fintech,
+        government tax systems, HRM modules and robotics projects for automation.
+      </p>
+
+      <div class="mt-6 flex flex-wrap gap-3">
+        <a href="https://github.com/gr8skills" class="px-4 py-2 glass rounded-md card-shadow hover:scale-[1.02] transform transition">GitHub</a>
+        <a href="https://linkedin.com/in/gr8skills" class="px-4 py-2 glass rounded-md card-shadow hover:scale-[1.02] transform transition">LinkedIn</a>
+        <a href="mailto:temitope.seidu7@gmail.com" class="px-4 py-2 glass rounded-md card-shadow hover:scale-[1.02] transform transition">Email</a>
+        <a href="#contact" class="px-4 py-2 bg-indigo-600 rounded-md font-medium">Work with me</a>
+      </div>
+
+      <!-- skills -->
+      <div class="mt-8 grid grid-cols-2 sm:grid-cols-4 gap-3">
+        <div class="bg-[#071827] p-4 rounded-lg">
+          <p class="text-xs text-slate-400">Languages</p>
+          <p class="font-semibold mt-1">PHP · JS · Node · Python </p>
+        </div>
+        <div class="bg-[#071827] p-4 rounded-lg">
+          <p class="text-xs text-slate-400">Frameworks</p>
+          <p class="font-semibold mt-1">Laravel · Angular · React</p>
+        </div>
+        <div class="bg-[#071827] p-4 rounded-lg">
+          <p class="text-xs text-slate-400">DB / Tools</p>
+          <p class="font-semibold mt-1">MySQL · MongoDB · Git</p>
+        </div>
+        <div class="bg-[#071827] p-4 rounded-lg">
+          <p class="text-xs text-slate-400">Robotics</p>
+          <p class="font-semibold mt-1">C++ · Arduino · Raspberry Pi</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- visual card -->
+    <aside class="w-full md:w-1/3 reveal" data-reveal>
+      <div class="p-6 rounded-2xl bg-gradient-to-r from-white/3 to-white/6 card-shadow glass">
+        <div class="flex items-center gap-4">
+          <div class="w-16 h-16 rounded-full bg-gradient-to-tr from-indigo-500 to-cyan-400 flex items-center justify-center text-black font-bold">TS</div>
+          <div>
+            <div class="font-semibold">Temitope Joseph Seidu</div>
+            <div class="text-sm text-slate-300">Full Stack Developer</div>
+          </div>
+        </div>
+
+        <div class="mt-4 text-slate-300 text-sm">
+          <p><strong>Location:</strong> Lekki Phase 1, Lagos</p>
+          <p class="mt-1"><strong>Email:</strong> temitope.seidu7@gmail.com</p>
+          <p class="mt-1"><strong>Phone:</strong> +234-806-901-8573</p>
+        </div>
+
+        <div class="mt-6 flex gap-3">
+          <a href="https://github.com/gr8skills" class="w-full py-2 text-center rounded-md bg-slate-800">View GitHub</a>
+          <a href="resume.pdf" download class="w-full py-2 text-center rounded-md bg-cyan-400 text-black font-semibold">Resume</a>
+        </div>
+      </div>
+    </aside>
+  </header>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="max-w-5xl mx-auto px-6 py-12">
+    <h2 class="text-2xl font-bold reveal" data-reveal>Highlighted Projects</h2>
+    <p class="text-slate-400 mt-2 max-w-2xl reveal" data-reveal>
+      Interactive project showcase — hover to see details, click to open a project card with more info.
+    </p>
+
+    <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+      <!-- Project 1 -->
+      <article class="project-card reveal card-shadow rounded-xl overflow-hidden bg-[#041220] transform transition hover:scale-105" data-reveal data-title="State Tax Management System" data-desc="Built for multiple state governments to manage tax, IGR and vehicle registration. Stack: Laravel, Angular, MySQL." data-tech="Laravel · Angular · MySQL">
+        <div class="proj-image p-6 flex items-end">
+          <div class="text-white">
+            <h3 class="text-lg font-bold">Revenue Automation System (RAS)</h3>
+            <p class="text-sm text-slate-200/80 mt-1">Government-level tax & revenue generation system</p>
+          </div>
+        </div>
+        <div class="p-5">
+          <p class="text-slate-300 text-sm">Web app (and APIs for Mobile app and external integrations) that enables accurate tax collection and IGR management across several states. Includes dashboards and reporting features.</p>
+          <div class="mt-4 flex justify-between items-center">
+            <div class="text-xs text-slate-400">Laravel · Angular · Bootstrap</div>
+            <div class="flex justify-end items-center gap-3">
+                <button onclick="window.location.href='https://niswasecbiller.org/'; target='_blank'" class="px-3 py-1 rounded-md bg-indigo-600 text-white text-sm">Link</button>
+                <button class="open-project px-3 py-1 rounded-md bg-indigo-600 text-white text-sm">View</button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 2 -->
+      <article class="project-card reveal card-shadow rounded-xl overflow-hidden bg-[#041220] transform transition hover:scale-105" data-reveal data-title="Educare - Modern ERP Solution" data-desc="A comprehensive system to manage all operations for schools and a modern ERP solution designed for Businesses" data-tech="Laravel · JS">
+        <div class="proj-image p-6 flex items-end">
+          <div class="text-white">
+            <h3 class="text-lg font-bold">Educare - Modern ERP Solution</h3>
+            <p class="text-sm text-slate-200/80 mt-1">Robust school and other businesses software</p>
+          </div>
+        </div>
+        <div class="p-5">
+          <p class="text-slate-300 text-sm">Building a better future for Schools and Businesses with modules such as finance, pastoral, student admission, lesson planner, HR manager, CBT, eClassroom etc.</p>
+          <div class="mt-4 flex justify-between items-center">
+            <div class="text-xs text-slate-400">LAMP · PHP · AngularJS </div>
+            <div class="flex justify-end items-center gap-3">
+                <button onclick="window.location.href='https://www.educare.school/'; target='_blank'" class="px-3 py-1 rounded-md bg-indigo-600 text-white text-sm">Link</button>
+                <button class="open-project px-3 py-1 rounded-md bg-indigo-600 text-white text-sm">View</button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 3 -->
+      <article class="project-card reveal card-shadow rounded-xl overflow-hidden bg-[#041220] transform transition hover:scale-105" data-reveal data-title="HRM Module" data-desc="An HMS that handles patient treatment, reports, medication stock, laboratory tests and referral" data-tech="Laravel · AngularJS">
+        <div class="proj-image p-6 flex items-end">
+          <div class="text-white">
+            <h3 class="text-lg font-bold">Health Management System</h3>
+            <p class="text-sm text-slate-200/80 mt-1">Robust health management solution</p>
+          </div>
+        </div>
+        <div class="p-5">
+          <p class="text-slate-300 text-sm">Covers recruitment, staff records, payroll, leave management and discipline processes with audit logs.</p>
+          <div class="mt-4 flex justify-between items-center">
+            <div class="text-xs text-slate-400">Laravel · React · TailwindCSS</div>
+            <div class="flex justify-end items-center gap-3">
+                <button onclick="window.location.href='https://caresol.blouzatechdev.ng/'; target='_blank'" class="px-3 py-1 rounded-md bg-indigo-600 text-white text-sm">Link</button>
+                <button class="open-project px-3 py-1 rounded-md bg-indigo-600 text-white text-sm">View</button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 4 -->
+      <article class="project-card reveal card-shadow rounded-xl overflow-hidden bg-[#041220] transform transition hover:scale-105" data-reveal data-title="Robotics — Auto Hand-wash" data-desc="Automated hand-washing system and produce sorting robots for pandemic response and agricultural automation." data-tech="C++ · Raspberry Pi · Arduino">
+        <div class="proj-image p-6 flex items-end">
+          <div class="text-white">
+            <h3 class="text-lg font-bold">Robotics Projects</h3>
+            <p class="text-sm text-slate-200/80 mt-1">Automation for health & agriculture</p>
+          </div>
+        </div>
+        <div class="p-5">
+          <p class="text-slate-300 text-sm">Built an automated hand-washing machine and fruit-sorting systems using Arduino and Raspberry Pi.</p>
+          <div class="mt-4 flex justify-between items-center">
+            <div class="text-xs text-slate-400">C++ · Arduino</div>
+            <button class="open-project px-3 py-1 rounded-md bg-indigo-600 text-white text-sm">View</button>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ABOUT / EXPERIENCE -->
+  <section id="about" class="max-w-5xl mx-auto px-6 py-12">
+    <h2 class="text-2xl font-bold reveal" data-reveal>About & Experience</h2>
+
+    <div class="mt-6 grid md:grid-cols-2 gap-6">
+      <div class="bg-[#041827] p-6 rounded-xl reveal" data-reveal>
+        <h3 class="font-semibold">Summary</h3>
+        <p class="mt-3 text-slate-300 text-sm">
+          Full-stack developer and robotic engineer with 7+ years experience across software development, testing and quality assurance. Experience with LAMP, NodeJS, Angular, React, and robotic platforms.
+        </p>
+
+        <div class="mt-4">
+          <h4 class="text-sm text-slate-400">Strengths</h4>
+          <ul class="mt-2 list-disc ml-5 text-slate-300 text-sm">
+            <li>Critical thinking & problem solving</li>
+            <li>Designing resilient backend systems</li>
+            <li>Integrating payment APIs & financial modules</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="bg-[#041827] p-6 rounded-xl reveal" data-reveal>
+        <h3 class="font-semibold">Work Experience (condensed)</h3>
+
+        <div class="mt-3 space-y-3 text-slate-300 text-sm">
+          <div>
+            <div class="font-semibold">NowNow Digital Systems Ltd. — Fullstack Developer</div>
+            <div class="text-xs text-slate-400">Mar 2023 – Present</div>
+            <div>Built & manage tax collection and vehicle registration solutions for state governments. Stack: Laravel, Angular.</div>
+          </div>
+
+          <div>
+            <div class="font-semibold">Winexviv International — Back-end Developer</div>
+            <div class="text-xs text-slate-400">Jul 2019 – Feb 2023</div>
+            <div>Developed realtime error notifier, accounts & finance modules, and HRM systems. Stack: Laravel, AngularJS.</div>
+          </div>
+
+          <div>
+            <div class="font-semibold">SFS Capital Nigeria Limited - Software Engineer & Support</div>
+            <div class="text-xs text-slate-400">Jul 2021 – Jan 2023</div>
+            <div>Design, develop and modify software systems, using scientific analysis and mathematical models to
+predict and measure outcome and consequences of design. Stack: Laravel, React, NextJS.</div>
+          </div>
+
+          <div>
+            <div class="font-semibold">Donrose-RK — Full Stack Developer</div>
+            <div class="text-xs text-slate-400">Dec 2016 – Aug 2018</div>
+            <div>Stock management / accounting apps, diesel monitoring systems. Stack: Python, Laravel, MongoDB.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-8 reveal" data-reveal>
+      <h3 class="font-semibold">Education</h3>
+      <p class="mt-2 text-slate-300 text-sm">Rufus Giwa Polytechnic — B.Tech Computer Engineering Technology (September 2013)</p>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="max-w-5xl mx-auto px-6 py-12">
+    <h2 class="text-2xl font-bold reveal" data-reveal>Contact</h2>
+    <div class="mt-6 grid md:grid-cols-2 gap-6">
+      <div class="bg-[#041827] p-6 rounded-xl reveal" data-reveal>
+        <h4 class="font-semibold">Let’s talk</h4>
+        <p class="mt-2 text-slate-300">Feel free to reach out for full-time opportunities or freelance work.</p>
+
+        <div class="mt-4 text-slate-300">
+          <p><strong>Email:</strong> temitope.seidu7@gmail.com</p>
+          <p class="mt-1"><strong>Phone:</strong> +234-806-901-8573</p>
+          <p class="mt-1"><strong>Location:</strong> Lekki Phase 1, Lagos</p>
+        </div>
+
+        <div class="mt-5 flex gap-3">
+          <a href="https://linkedin.com/in/gr8skills" class="px-4 py-2 bg-slate-700 rounded-md">LinkedIn</a>
+          <a href="https://github.com/gr8skills" class="px-4 py-2 bg-slate-700 rounded-md">GitHub</a>
+        </div>
+      </div>
+
+      <!-- <form id="contactForm" class="bg-[#041827] p-6 rounded-xl reveal" data-reveal
+            action="https://formspree.io/f/xblqlzzw" method="POST">
+        <label class="text-sm text-slate-300">Your name</label>
+        <input name="name" required class="w-full mt-2 p-2 rounded bg-[#02101a] text-slate-200" />
+
+        <label class="text-sm text-slate-300 mt-4 block">Your email</label>
+        <input type="email" name="_replyto" required class="w-full mt-2 p-2 rounded bg-[#02101a] text-slate-200" />
+
+        <label class="text-sm text-slate-300 mt-4 block">Message</label>
+        <textarea name="message" required rows="4" class="w-full mt-2 p-2 rounded bg-[#02101a] text-slate-200"></textarea>
+
+        <div class="mt-4 flex justify-end">
+          <button type="submit" class="px-5 py-2 rounded-md bg-indigo-600">Send</button>
+        </div>
+      </form> -->
+    </div>
+  </section>
+
+  <footer class="max-w-5xl mx-auto px-6 py-8 text-slate-400">
+    <div class="flex items-center justify-between">
+      <div>© <span id="year"></span> Temitope Joseph Seidu</div>
+      <div class="text-sm">Built with ❤️ · Hosted on GitHub Pages</div>
+    </div>
+  </footer>
+
+  <!-- Project modal -->
+  <div id="modal" class="hidden fixed inset-0 z-50 items-center justify-center">
+    <div class="absolute inset-0 modal-backdrop"></div>
+    <div class="relative max-w-3xl w-full mx-4">
+      <div class="bg-[#06151f] rounded-xl overflow-hidden">
+        <div class="p-6">
+          <div class="flex justify-between items-start">
+            <div>
+              <h3 id="modalTitle" class="text-xl font-semibold"></h3>
+              <div id="modalTech" class="text-xs text-slate-400 mt-1"></div>
+            </div>
+            <button id="closeModal" class="text-slate-300">Close</button>
+          </div>
+          <div id="modalDesc" class="mt-4 text-slate-300"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts: reveal animations, modal handling -->
+  <script>
+    // set current year
+    document.getElementById('year').innerText = new Date().getFullYear();
+
+    // IntersectionObserver for reveal
+    const reveals = document.querySelectorAll('[data-reveal]');
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          obs.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    reveals.forEach(el => {
+      el.classList.add('reveal');
+      obs.observe(el);
+    });
+
+    // Project modal opening
+    const openBtns = document.querySelectorAll('.open-project');
+    const modal = document.getElementById('modal');
+    const modalTitle = document.getElementById('modalTitle');
+    const modalDesc = document.getElementById('modalDesc');
+    const modalTech = document.getElementById('modalTech');
+    const closeModal = document.getElementById('closeModal');
+
+    openBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const card = btn.closest('.project-card');
+        const title = card.getAttribute('data-title') || 'Project';
+        const desc = card.getAttribute('data-desc') || '';
+        const tech = card.getAttribute('data-tech') || '';
+        modalTitle.textContent = title;
+        modalDesc.textContent = desc;
+        modalTech.textContent = tech;
+        modal.classList.remove('hidden');
+        setTimeout(()=> modal.classList.add('flex'), 10);
+      });
+    });
+
+    closeModal.addEventListener('click', () => {
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    });
+
+    // close modal on backdrop click
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        modal.classList.add('hidden');
+        modal.classList.remove('flex');
+      }
+    });
+
+    // Optional: intercept contact form submit to show a quick success message (Formspree still handles)
+    const form = document.getElementById('contactForm');
+    form.addEventListener('submit', (e) => {
+      // let Formspree send — small unobtrusive UX: change button text
+      const btn = form.querySelector('button[type="submit"]');
+      btn.disabled = true;
+      btn.textContent = 'Sending…';
+    });
+  </script>
+</body>
+</html>
