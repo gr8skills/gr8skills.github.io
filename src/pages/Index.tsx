@@ -18,7 +18,7 @@ const Index = () => {
         />
         <meta name="keywords" content="Full Stack Developer, React Developer, Angular Developer, PHP Developer, Laravel, .NET, Robotic Engineer, Lagos Nigeria" />
         <meta property="og:title" content="Temitope Joseph Seidu - Full Stack Developer" />
-        <meta property="og:description" content="7+ years crafting production-grade solutions in fintech, agriculture, and government systems." />
+        <meta property="og:description" content="8+ years crafting production-grade solutions in fintech, agriculture, and government systems." />
         <meta property="og:type" content="website" />
         <link rel="canonical" href="https://temitopejs.dev" />
       </Helmet>

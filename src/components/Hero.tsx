@@ -92,7 +92,7 @@ const Hero = () => {
             size="lg"
             asChild
           >
-            <a href="/src/files/Resume_Temitope_Joseph____updated.pdf" download>
+            <a href="/Resume_Temitope_Joseph.pdf" download>
               <FileDown className="w-5 h-5 mr-2" />
               Resume
             </a>
