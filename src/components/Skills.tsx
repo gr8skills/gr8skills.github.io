@@ -4,12 +4,12 @@ const skillCategories = [
   {
     title: "Languages",
     icon: Code,
-    skills: ["PHP", "JavaScript", "TypeScript", "C#", "Python", "Kotlin", "C++"]
+    skills: ["PHP", "JavaScript", "TypeScript", "C#", "Python", "Kotlin", "C++", "Dart"]
   },
   {
     title: "Frameworks & Tools",
     icon: Wrench,
-    skills: ["Laravel", "Angular", "React", "Vue", "NestJS", "Express", "ASP.NET Core", "Spring", "Docker", "Git"]
+    skills: ["Laravel", "Angular", "React", "Vue", "NestJs", "NextJs", "Express", "ASP.NET Core", "Spring", "Docker", "Git"]
   },
   {
     title: "Database & Storage",
