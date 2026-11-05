@@ -2,71 +2,92 @@ import { Briefcase, Calendar, MapPin } from "lucide-react";
 
 const experiences = [
   {
-    company: "Blouza Technologies Ltd.",
+    company: "Gofly Travel & Tours Limited",
     location: "Lagos, Nigeria",
-    period: "Jul. 2025 – Present",
-    role: "Fullstack Developer (PHP / NestJs / React / NextJs)",
+    period: "Jan. 2026 – Present",
+    role: "Full Stack Developer (PHP / Angular)",
     highlights: [
-      "Led the development of cutting-edge solutions such as CareSol, EasyPay, and ReMS",
-      "Contributed to building tax solutions for local and state governments in Nigeria",
-      "Built reusable React components, improving UI performance and maintainability",
-      "Optimised SQL queries and implemented caching strategies, improving API response times significantly"
+      "Build and maintain features on makeifly.com, the company's flight and hotel booking platform",
+      "Integrated a hotel booking supplier and a new payment gateway",
+      "Moved the build pipeline to GCP Cloud Build and packaged the application with Docker for staging",
+      "Deployed the app on Cloud Run so it scales up on its own during busy booking periods"
     ],
-    technologies: ["Laravel", "React", "NestJS", "NextJS", "MySQL", "Git"]
+    technologies: ["Laravel", "Angular", "MySQL", "Docker", "GCP Cloud Build", "Cloud Run"]
+  },
+  {
+    company: "Blouza Technologies Ltd.",
+    location: "Lagos, Nigeria (Remote)",
+    period: "Jul. 2025 – Present",
+    role: "Full Stack Developer (PHP / NestJS / React)",
+    highlights: [
+      "Lead development of CareSol, EasyPay and ReMS, and contribute to the rest of the product line, much of it revenue and tax software for state and local governments",
+      "Build REST APIs in NestJS and Laravel; reworked slow data aggregation queries, bringing average API latency down noticeably",
+      "Set up GCP environments with Terraform so development and production are configured the same way",
+      "Wrote GitHub Actions pipelines that lint, run the test suite, and push an image to Artifact Registry only when everything passes",
+      "Maintain a set of shared React components used across the company's frontends"
+    ],
+    technologies: ["NestJS", "Laravel", "React", "Next.js", "PostgreSQL", "Terraform", "GitHub Actions", "Artifact Registry"]
   },
   {
     company: "PayOnDelivery",
-    location: "Houston, Texas",
+    location: "Houston, Texas (Remote)",
     period: "Jan. 2025 – Dec. 2025",
     role: "Lead Developer (PHP / React)",
     highlights: [
-      "Led the development of user-centric, standard modules that make buying and selling effortless and seamless",
-      "Improved on existing implementations and screens",
-      "Handled code review, deployments and server management, ensuring 99% uptime",
-      "Optimised SQL queries and implemented caching strategies, improving API response times significantly"
+      "Owned the engineering roadmap for a cross-border marketplace and shipped its buyer-to-seller checkout and payment flows",
+      "Reviewed pull requests, ran deployments and looked after the servers, keeping uptime at 99.9% with automated alerts and recovery",
+      "Migrated the app off its old hosting onto AWS EC2, with S3 for file storage and CircleCI for deploys"
     ],
-    technologies: ["Laravel", "React", "CircleCI", "GitHub Actions", "MySQL", "Git"]
+    technologies: ["Laravel", "React", "MySQL", "AWS EC2", "S3", "CircleCI"]
   },
   {
     company: "NowNow Digital Systems Ltd.",
     location: "Lagos, Nigeria",
-    period: "Mar. 2023 – Present",
-    role: "Fullstack Developer (PHP / Angular)",
+    period: "Mar. 2023 – Jan. 2026",
+    role: "Full Stack Developer (PHP / Angular)",
     highlights: [
-      "Contributed to the development and maintenance of government revenue automation systems across multiple states in Nigeria",
-      "Integrated secure modules for tax collection, business licensing, land revenue management, and vehicle registration",
-      "Developed internal microservices using ASP.NET Core Web API, handling authentication, user role permissions, and data synchronisation",
-      "Optimized SQL queries and implemented caching strategies, improving API response times by 32%",
-      "Built reusable Angular components, improving UI performance and maintainability"
+      "Worked on government revenue platforms in several states, covering tax collection, business licensing, land revenue and vehicle registration",
+      "Built internal services in ASP.NET Core Web API for authentication, role permissions and two-way data sync with the older PHP systems still in use",
+      "Helped containerise the state-level services and move them to GKE, giving each state its own isolated deployment and better fault tolerance",
+      "Rewrote slow SQL queries and added Redis caching, cutting API response times by 32%",
+      "Built reusable Angular components that made the admin screens faster and easier to maintain"
     ],
-    technologies: ["Laravel", "Angular", "ASP.NET Core (C#)", "MySQL", "MSSQL", "Git"]
+    technologies: ["Laravel", "Angular", "ASP.NET Core (C#)", "SQL Server", "MySQL", "Redis", "GKE"]
   },
   {
     company: "Winexviv International",
     location: "Lagos, Nigeria",
-    period: "July 2019 – Feb. 2023",
-    role: "Back-end Developer & Robotic Engineer",
+    period: "Jul. 2019 – Feb. 2023",
+    role: "Backend Developer & Robotics Engineer (educare)",
     highlights: [
-      "Developed an automated error notifier system that captures critical application failures, raising customer satisfaction by 35%",
-      "Contributed to the design and development of the accounts and finance module, integrating wallet services and payment gateways (Rave, Paystack)",
-      "Participated in building an HRM system covering staffing, payroll, leave and employee data management",
-      "Developed automated hand-washing machines and disinfectant booths during the 2020 pandemic",
-      "Built agricultural fruit-sorting systems using Raspberry Pi and embedded C++",
-      "Trained students in STREAM robotics programs"
+      "Built an error notifier for the educare platform that flags critical failures as they happen; issue resolution improved by 35% after it went live",
+      "Helped design the accounts and finance module, including multi-currency wallets and a fallback between Paystack and Rave when one gateway failed",
+      "Worked on an HRM system covering staffing, payroll, leave and employee records",
+      "Set up Azure Pipelines for some business units so builds were verified before going out to Azure App Service",
+      "Built automated hand-washing machines and disinfectant booths during the 2020 pandemic and a fruit-sorting system on Raspberry Pi; also taught STREAM robotics classes"
     ],
-    technologies: ["Laravel", "AngularJS", "MySQL", "C++", "Arduino", "Raspberry Pi"]
+    technologies: ["Laravel", "AngularJS", "MySQL", "Azure Pipelines", "Azure App Service", "C++", "Arduino", "Raspberry Pi"]
   },
   {
     company: "SFS Capital Nigeria Limited",
     location: "Lagos, Nigeria",
-    period: "2019 – 2023",
+    period: "",
     role: "Software Engineer & Support",
     highlights: [
-      "Designed and modified software systems using mathematical models and engineering principles",
-      "Developed internal platforms using React, NextJS, Laravel, and .NET integrations for data processing",
-      "Conducted feasibility analysis on large-scale software features"
+      "Built internal data-processing tools and portals in React, Next.js and Laravel on top of existing .NET APIs",
+      "Did feasibility analysis on large proposed features, using mathematical modelling to test designs before development started"
     ],
-    technologies: ["Laravel", "React", "Next.js", ".NET", "Git", "Excel", "SPSS"]
+    technologies: ["Laravel", "React", "Next.js", ".NET APIs"]
+  },
+  {
+    company: "Freelance",
+    location: "Oyo State, Nigeria",
+    period: "Sep. 2018 – Jun. 2019",
+    role: "Software Developer",
+    highlights: [
+      "Built and maintained web applications for small businesses in Laravel and MySQL, handling everything from requirements through to hosting and support"
+    ],
+    technologies: ["Laravel", "MySQL"]
   },
   {
     company: "DONROSE-RK Nigeria Limited",
@@ -74,11 +95,21 @@ const experiences = [
     period: "Dec. 2016 – Aug. 2018",
     role: "Full Stack Developer & Administrator",
     highlights: [
-      "Built a stock management and accounting web application tracking goods movement with Nigerian Breweries",
-      "Enabled recovery of ₦7 million worth of pending deliveries within 6 months",
-      "Developed systems for diesel usage monitoring, vehicle depreciation tracking, personnel sales performance, and profit analysis"
+      "Built a stock management and accounting web app that tracked goods moving through the company's distribution network",
+      "Helped recover ₦7 million in unaccounted deliveries within six months",
+      "Added tools for diesel usage, vehicle depreciation, sales staff performance and profit analysis"
     ],
-    technologies: ["PHP", "MySQL", "Excel", "VBA", "Git"]
+    technologies: ["PHP", "MySQL", "Excel VBA"]
+  },
+  {
+    company: "Freelance",
+    location: "Delta, Nigeria",
+    period: "Mar. 2015 – Nov. 2016",
+    role: "Web Developer",
+    highlights: [
+      "Built websites and small database-backed web tools in PHP and MySQL for local businesses, and kept them running after launch"
+    ],
+    technologies: ["PHP", "MySQL"]
   },
   {
     company: "National Youth Service Corps",
@@ -86,10 +117,10 @@ const experiences = [
     period: "Mar. 2014 – Feb. 2015",
     role: "IT Support (Accounts & Finance)",
     highlights: [
-      "Built Excel VBA automation for processing corps members' monthly allowance, reducing workload by 45%",
-      "Managed document control systems across departments using Access and Visual Basic"
+      "Automated the monthly allowance processing for corps members in Excel VBA, cutting the workload by 45%",
+      "Ran document control across departments using Microsoft Access and Visual Basic"
     ],
-    technologies: ["Excel VBA", "Microsoft Access", "Batch Script"]
+    technologies: ["Excel VBA", "Microsoft Access", "Visual Basic"]
   }
 ];
 
@@ -109,7 +140,7 @@ const Experience = () => {
           <div className="space-y-12">
             {experiences.map((exp, index) => (
               <div 
-                key={`${exp.company}-${exp.period}`}
+                key={`${exp.company}-${exp.location}-${exp.period}`}
                 className={`relative flex flex-col md:flex-row gap-8 ${
                   index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
                 }`}
@@ -121,10 +152,12 @@ const Experience = () => {
                 <div className={`flex-1 pl-8 md:pl-0 ${index % 2 === 0 ? 'md:pr-16 md:text-right' : 'md:pl-16'}`}>
                   <div className="p-6 rounded-2xl bg-card border border-border card-hover">
                     <div className={`flex flex-wrap items-center gap-3 mb-3 ${index % 2 === 0 ? 'md:justify-end' : ''}`}>
-                      <span className="inline-flex items-center gap-1.5 text-sm text-muted-foreground">
-                        <Calendar className="w-4 h-4" />
-                        {exp.period}
-                      </span>
+                      {exp.period && (
+                        <span className="inline-flex items-center gap-1.5 text-sm text-muted-foreground">
+                          <Calendar className="w-4 h-4" />
+                          {exp.period}
+                        </span>
+                      )}
                       <span className="inline-flex items-center gap-1.5 text-sm text-muted-foreground">
                         <MapPin className="w-4 h-4" />
                         {exp.location}

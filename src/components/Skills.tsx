@@ -1,25 +1,40 @@
-import { Code, Database, Wrench, Cpu, Zap } from "lucide-react";
+import { Code, Database, Server, Layout, Cloud, GitBranch, Cpu, Zap } from "lucide-react";
 
 const skillCategories = [
   {
-    title: "Languages",
+    title: "Programming Languages",
     icon: Code,
-    skills: ["PHP", "JavaScript", "TypeScript", "C#", "Python", "Kotlin", "C++", "Dart"]
+    skills: ["PHP 8.x", "JavaScript", "TypeScript", "C# (.NET Core)", "Python", "C++ (Embedded/IoT)", "Kotlin"]
   },
   {
-    title: "Frameworks & Tools",
-    icon: Wrench,
-    skills: ["Laravel", "Angular", "React", "Vue", "NestJs", "NextJs", "Express", "ASP.NET Core", "Spring", "Docker", "Git"]
+    title: "Backend & Architecture",
+    icon: Server,
+    skills: ["Laravel (Eloquent, Queues)", "NestJS", "ASP.NET Core Web API", "Entity Framework Core", "Express.js", "Node.js", "Spring Boot", "REST / GraphQL", "Microservices", "Event-Driven (SignalR)"]
   },
   {
-    title: "Database & Storage",
+    title: "Frontend",
+    icon: Layout,
+    skills: ["Angular", "React", "Next.js", "Blazor", "HTML5 / CSS3"]
+  },
+  {
+    title: "Databases & Storage",
     icon: Database,
-    skills: ["MySQL", "MSSQL", "PostgreSQL", "SQLite", "MongoDB", "NoSQL"]
+    skills: ["PostgreSQL", "MySQL", "MSSQL", "SQLite", "MongoDB", "Redis", "Query Optimisation & Indexing", "Migrations", "Data Synchronisation"]
   },
   {
-    title: "Robotics & IoT",
+    title: "Cloud (Primary: GCP)",
+    icon: Cloud,
+    skills: ["GKE", "Cloud Run", "Cloud Functions", "Cloud Build", "Artifact Registry", "AWS EC2 / S3 / EKS", "Azure App Services", "Azure Functions"]
+  },
+  {
+    title: "CI/CD & Infrastructure as Code",
+    icon: GitBranch,
+    skills: ["GitHub Actions", "CircleCI", "Azure Pipelines", "Docker", "Docker Compose", "Terraform (GCP/AWS)"]
+  },
+  {
+    title: "Automation & Robotics",
     icon: Cpu,
-    skills: ["Arduino", "Raspberry Pi", "RPA (C++)", "Sensors", "Servo Motors"]
+    skills: ["Embedded C++", "Arduino", "Raspberry Pi", "Robotic Process Automation"]
   }
 ];
 

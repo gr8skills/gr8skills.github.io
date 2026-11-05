@@ -36,7 +36,7 @@ const Education = () => {
                 <span className="font-semibold text-foreground">Relevant Coursework</span>
               </div>
               <div className="flex flex-wrap justify-center gap-3">
-                {["Digital Electronics", "Algorithm", "Matlab", "C++"].map((course) => (
+                {["Digital Electronics", "Algorithms", "MATLAB", "C++"].map((course) => (
                   <span 
                     key={course}
                     className="px-4 py-2 rounded-lg bg-secondary text-secondary-foreground font-medium"

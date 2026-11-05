@@ -28,12 +28,12 @@ const Hero = () => {
 
         {/* Title */}
         <p className="font-mono text-xl md:text-2xl text-primary mb-6 animate-slide-up" style={{ animationDelay: '0.1s' }}>
-          Full Stack Developer & Robotic Engineer
+          Full Stack Developer (Backend-heavy)
         </p>
 
         {/* Summary */}
         <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-10 animate-slide-up" style={{ animationDelay: '0.2s' }}>
-          8+ years crafting production-grade solutions in fintech, agriculture, government revenue management, manufacturing, and education technology.
+          9+ years designing, building and deploying production-grade applications across fintech, government revenue systems and logistics automation, with deep hands-on experience on Google Cloud Platform.
         </p>
 
         {/* Contact Info Pills */}
@@ -92,7 +92,7 @@ const Hero = () => {
             size="lg"
             asChild
           >
-            <a href="/Resume_Temitope_Joseph.pdf" download>
+            <a href="/Temitope_Joseph_Seidu_Resume.pdf" download>
               <FileDown className="w-5 h-5 mr-2" />
               Resume
             </a>
