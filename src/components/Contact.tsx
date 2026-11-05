@@ -49,7 +49,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="text-sm text-muted-foreground">Location</p>
-                  <p className="font-medium text-foreground">15b, Alhaji Hussein, Lekki Phase 1, Lagos</p>
+                  <p className="font-medium text-foreground">30, Olafisoye, Obawole Iju, Lagos</p>
                 </div>
               </div>
             </div>
